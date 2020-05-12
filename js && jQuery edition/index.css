@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+    background-color: white;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(45, 45, 45, 0.98);
+}
+
+.header .logo {
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    color: aliceblue;
+    padding-left: 20px;
+    background-color: rgba(45, 45, 45, 0.98);
+}
+
+.header .logo img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.left_menu {
+    width: 200px;
+    height: calc(100% - 70px);
+    background-color: rgb(212, 212, 212);
+    color: aliceblue;
+    display: inline-block;
+}
+
+.left_menu dl dt {
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.left_menu dl dt,
+.left_menu dl dd {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    color: rgba(45, 45, 45, 0.98);
+}
+
+.left_menu dl dd {
+    padding-left: 30px;
+}
+
+.left_menu dl dd:hover {
+    background-color: darkgray;
+    color: #354457;
+    cursor: pointer;
+}
+
+.left_menu dl dd.active {
+    background-color: white;
+    color: #354457;
+}
+
+.left_menu .search{
+    position: relative;
+    width: 150px;
+    height: 80px;
+    top: 20px;
+    left: 30px;
+}
+.left_menu .search label{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing:1px;
+    color: rgba(45, 45, 45, 0.98);
+}
+.left_menu .search input{
+    margin: 7px 0;
+    padding: 5px 0 2px 5px;
+    border: none;
+}
+.left_menu .search .button{
+    font-size: 16px;
+    width: 35px;
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+.right_content {
+    position: absolute;
+    width: calc(100% - 200px);
+    height: calc(100% - 70px);
+    margin-left: 200px;
+    top: 70px;
+    background-color:#eee;
+}
+
+.right_content .add-student {
+    margin: 100px 0 0 28%;
+    width: 360px;
+    display: none;
+}
+
+.right_content .student-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+}
+
+.right_content .content-active {
+    display: block;
+}
+
+.content form label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.content form label.radio-label {
+    width: 20px;
+}
+
+.content form div {
+    margin-bottom: 10px;
+}
+
+.content form label,
+.content form input {
+    font-size: 18px;
+}
+
+.content form .input {
+    font-size: 0;
+}
+
+.content form .btn {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.content table {
+    width: 100%;
+    text-align: center;
+    min-width: 800px;
+}
+
+.content table thead {
+    background-color: rgb(156, 224, 241);
+}
+
+.content table tbody {
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.content table tbody td button {
+    padding: 3px 10px;
+    color: black;
+    border-radius: 15%;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+}
+
+.content table tbody td .btn-edit {
+    background-color: rgb(140, 240, 145);
+}
+
+.content table tbody td .btn-del {
+    background-color: rgb(255, 119, 119);
+}
+
+.dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.mask {
+    height: 100%;
+    width: 100%;
+}
+
+.show {
+    display: block;
+}
+
+.dialog .dialog-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog .dialog-content {
+    width: 500px;
+    height: 450px;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin: auto;
+    padding: 20px;
+}
+
+.dialog .dialog-content form {
+    width: 400px;
+    margin: 40px auto;
+}

@@ -1,0 +1,6 @@
+1，先引入bootstrap.css源码。
+2，引入jQuery。（因为bootstrap源码用jquery完成）
+3，引入bootstrap.js源码。
+（font为字体文件）
+4,引入官网html组件（粘贴复制）
+ 修改样式可以查看官网 栅格系统，列布局等css样式自行修改
